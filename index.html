@@ -9,8 +9,8 @@
   
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-  <div id="app" class="container">
+<body class="bg-dark mt-5">
+  <div id="app" class="container alert alert-dark ">
     <h1 class="my-4">Sistema de Gerenciamento de Vendas</h1>
     
    
@@ -202,7 +202,7 @@
         },
         adicionarVenda() {
           const vendaProdutos = this.novaVenda.produtosSelecionados.map(produto => {
-            const quantidade = this.quantidades[produto.nome] || 1; // Obtém a quantidade do produto, ou 1 se não especificado
+            const quantidade = this.quantidades[produto.nome] || 1; 
             return {
               ...produto,
               quantidade: quantidade,
